@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+  <script src="script.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+	<div class="transparent1">
+		<div class="transparent2">
+<div class="transparent">
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <a class="navbar-brand" >Hamza.</a>
+
+  <div id="nav1">
+  	<ul class="nav justify-content-end">
+  	<form class="form-inline">
+  		 <a href="#">Home</a>
+  		 <a href="https://www.facebook.com/hamza.shakeel.963"target= "blank">Contact</a>
+  		 <a href="#">Portfolio</a>
+  		 <a href="#">Hamza</a>
+
+
+  	</form>
+
+</ul>
+  </div>
+</nav>
+<div id="container">
+	<h1 >Hello Guys.</h1>
+	<p>Hey There! My name is Hamza. I am Pakistani Based Web developer with 2 months of experience.</p>
+		<btn class="btn btn-primary bg-dark" ><a href="file:///C:/Users/hamza/OneDrive/Desktop/aa/td.html" target="blank">Sign Up</a></btn>
+		<btn class="btn btn-primary bg-dark">Login</btn>
+
+		<h2 class="display-5">List of Courses done</h2>
+		
+    <ul>
+			<li>Html</li>
+			<li>Css</li>
+			<li>C++</li>
+			<li>C#</li>
+
+		</ul>
+		<a href="https://www.linkedin.com/in/muhammad-hamza-shakeel-0a2010173/" target="blank">Click to view Linkedin Profile</a>
+ <form  onsubmit="return myFunction()">
+ <label> Name (max 10 characters):</label> <input class="bg-dark text-light"type="text" id="fname" size="20" name="fname"><br>
+  <label>Age (from 1 to 100): </label><input class="bg-dark text-light" type="text" id="age" size="20" name="age"><br>
+ <label>E-mail: </label><input class="bg-dark text-light" type="text" id="email" size="20" name="mail"><br><br>
+  <input class="btn btn-primary bg-dark"type="submit" value="Submit"> 
+</form>
+
+
+<script>
+  prompt"what is your name";
+function myFunction() {
+  var at = document.getElementById("email").value.indexOf("@");
+  var age = document.getElementById("age").value;
+  var fname = document.getElementById("fname").value;
+  submitOK = "true";
+
+  if (fname.length > 10) {
+    alert("The name may have no more than 10 characters");
+    submitOK = "false";
+  } 
+
+  if (isNaN(age) || age < 1 || age > 100) {
+    alert("The age must be a number between 1 and 100");
+    submitOK = "false";
+  }
+
+  if (at == -1) {
+    alert("Not a valid e-mail!");
+    submitOK = "false";
+  }
+
+  if (submitOK == "false") {
+    return false;
+  }
+}
+</script>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
